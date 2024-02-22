@@ -1,0 +1,65 @@
+.wrapboxsy {
+	color: #6b6b6b;
+	font-size: 19px;
+	display:block;
+	background-image: url(../images/synonymes-pourcent.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding-left: 45px;
+	min-height: 45px;
+}
+.synonyms {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.synonyms .row {
+    display: flex;
+    flex-direction: row;
+    color: #6b6b6b;
+    font-size: 15px;
+}
+
+.synonyms .col1 {
+    position: relative;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.synonyms .col2 {
+    width: 38px;
+}
+
+.synonyms .col3 {
+    width: 50%;
+}
+
+.synonyms .rate {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 75%;
+    background: rgb(254, 168, 21);
+    background: linear-gradient(90deg, rgba(135, 149, 159, 1) 10%, rgba(221, 163, 59, 1) 50%, rgba(254, 168, 21, 1) 100%);
+    border-radius: 3px;
+}
+
+.synonyms .bulletpoint {
+    margin-right: 5px;
+}
+
+.synonyms a {
+    text-decoration: none;
+    color: #6b6b6b;
+    border-bottom: 2px dotted #fea816;
+}
+
+.synonyms a:hover {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px dotted black;
+}
