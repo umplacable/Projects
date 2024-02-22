@@ -1,13 +1,10 @@
 /* New CSS ----------------------------------------*/
 
-
-
 .imggal{
 	padding-bottom: 40px;
 	display: inline-block;
 	clear: both;
 	float: none;
-	pad
 }
 .imggalphoto1{
 	width: 100%;
@@ -73,7 +70,7 @@
 /*--------------------------------------------------*/
 
 body {
-	font-family: font-family: 'Roboto', sans-serif;;
+	font-family: 'Roboto', sans-serif;;
 	color: #454545;
 	background-color: #FFFFFF;
 	font-weight: 400;
@@ -112,7 +109,7 @@ body {
 	z-index: 1;
 }
 .searchtxt {
-	background-color: #none;
+	background-color: none;
 	border-width: 0px;
 	border-style: none;
 	color: #454545;
@@ -889,7 +886,7 @@ padding-top: 30px;
 	position: fixed;
 	top: 0px;
 	text-align: right;
-	float: right
+	float: right;
 }
 .facebookimgmobile img {
 	width: 75%;
@@ -931,7 +928,7 @@ padding-top: 30px;
 	float: left;
 }
 .searchtxt {
-	background-color: #none;
+	background-color: none;
 	border-width: 0px;
 	border-style: none;
 	color: #454545;
