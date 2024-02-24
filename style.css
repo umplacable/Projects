@@ -96,6 +96,39 @@ nav>ul>*{
     background-color: rgb(186, 230, 233);
     padding: 20px 20px 20px 20px;
 }
+.main2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 25px 8%;
+    height: 100%;
+    margin-top: 8.7%;
+    background-color: rgb(186, 230, 233);
+    padding: 20px 20px 20px 20px;
+}
+.arboressance{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: center;
+}
+.arboressance>*{
+    margin: 10px;
+}
+.arboressance>a>h2{
+    padding: 5px;
+    border: 2px solid rgb(243, 47, 106) ;
+    border-radius: 16px;
+}
+.titre{
+    margin-block-start: 20px;
+    color: rgb(199, 28, 79);
+    font-size: 35px;
+}
 
 .Projets{
     margin: 0.1px 20px 8px 0px;
@@ -103,6 +136,7 @@ nav>ul>*{
     height: fit-content;
     padding: 0.1px 20px 20px 20px;
     background-color: rgb(157, 199, 201);
+    font-size: 18px;
 }
 .titreP{
     margin-block-start: 20px;
