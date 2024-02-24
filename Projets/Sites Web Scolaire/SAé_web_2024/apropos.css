@@ -1,0 +1,148 @@
+.encadrement img{
+  border: solid 1px;
+ }
+.encadrement {
+  margin-top: 8%;
+}
+
+.centrage p{
+  text-align: left;
+}
+.centrage{
+  padding-top: 8%;
+  text-align: center;
+}
+
+.centrage2{
+  margin: auto;
+	 text-align: center;
+}
+.centrage2 form {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 7px;
+}
+.centrage2 input {
+    width: 50vh;
+    font-size: 16px;
+    margin: auto;
+}
+textarea {
+    resize : none;
+    margin: auto;
+    font-size: 16px;
+    height: 150px;
+    width: 50vh;
+}
+
+
+.button-5 {
+  margin: 0 auto;
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #cce8cc;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  min-height: 4.5vh;
+  position: relative;
+  transition: all 250ms;
+  width: 10vh;
+}
+
+.button-5:hover, .button-5:focus {
+  background-color: #cce8cc;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #cce8cc;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.container {
+  font-size: 1.6vh;
+  width: 30%;
+  display: grid;
+  justify-content: center;
+  min-width: 100px;
+}
+.container2 {
+  justify-content: space-evenly;
+  margin: auto;
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  align-items: center;
+}
+.container2 img {
+  margin: 1.5vh auto;
+  width: 15vh;
+  height: 23vh;
+  border: 1px solid black;
+  
+}
+
+.container2>.container>p {
+  margin: 5px !important;
+  text-align: center;
+}
+
+a[href*="https://www.snapchat.com/"] {
+  font-size: 0px;
+  padding: 16px;
+  background-image: url(image/snapchat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a[href*="https://twitter.com/?lang=fr"] {
+  font-size: 0px;
+  padding: 16px;
+  background-image: url(image/twitter.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+a[href*="https://www.instagram.com/?hl=fr"] {
+  font-size: 0px;
+  padding: 16px;
+  background-image: url(image/instagram.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+a[href*="https://fr-fr.facebook.com/"] {
+  font-size: 0px;
+  padding: 16px;
+  background-image: url(image/facebook.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bas {
+  display: flex;
+  align-items:center;
+  gap: 3vh ;
+  background-color: #f0f2f4;
+  margin-top: 4%;
+  padding: 1vh;
+  padding-left: 4vh;
+}
+.centrage p {
+  padding-bottom: 4vh;
+}

@@ -1,0 +1,56 @@
+.critique-grid {
+  padding-top: 3vh ;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 4vh;
+  flex-wrap: wrap;
+}
+
+.critique-box {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 260px;
+  height: 340px;
+  border: 1px solid lightgrey;
+  border-radius: 5vh;
+  position: relative;
+  overflow: scroll;
+}
+
+.critique-name {
+  margin: 5px !important;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+
+.critique-description {
+  margin: 0 !important;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  color: gray;
+}
+
+@media (max-width: 800px){
+
+  .critique-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .critique-box {
+    width: 45vh;
+  }
+  .critique-name {
+    padding-bottom: 1px;
+    font-size: 18px;
+  }
+  .critique-description {
+    font-size: 14px;
+  }
+}
