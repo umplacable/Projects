@@ -115,10 +115,12 @@ nav>ul>*{
 .arboressance>*{
     margin: 10px;
 }
-.arboressance>a>h2{
+.arboressance a>h2{
     padding: 5px;
     border: 2px solid rgb(243, 47, 106) ;
     border-radius: 16px;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
 }
 .titre{
     margin-block-start: 20px;
@@ -165,4 +167,16 @@ footer{
     background-color: red;
     box-shadow: 0 0 10px rgb(56, 69, 70);
     margin: 20px;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.arboressance p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
