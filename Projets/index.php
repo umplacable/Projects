@@ -1,3 +1,13 @@
+<?php
+if (!empty($_GET['q'])) {
+  switch ($_GET['q']) {
+    case 'info':
+      phpinfo();
+      exit;
+      break;
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -32,5 +42,24 @@
                 <a href="Programes/"><h2>Programmes</h2></a>
             </section>
         </div>
+        <?php
+        $dirList = glob('*', GLOB_ONLYDIR);
+        if (!empty($dirList)) :  
+        ?>
+          <nav>
+            <ul>
+              <?php
+              foreach ($dirList as $key => $value) :
+                $link = 'https://' . $value . '.test';
+              ?>
+                <a href="<?php echo $link; ?>" target="_blank"><?php echo $link; ?></a>
+              <?php
+              endforeach;
+              ?>
+            </ul>
+          </nav>
+        <?php
+        else :
+        ?>
     </body>
 </html>
