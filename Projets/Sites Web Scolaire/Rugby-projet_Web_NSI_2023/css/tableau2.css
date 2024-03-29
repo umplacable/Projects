@@ -1,0 +1,36 @@
+table{
+    padding :20px;
+    position: relative;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border:2px solid  #101b31;
+    color: rgb(0, 0, 0); 
+	text-align:center;
+    width: 90%;
+}
+table>thead>tr>th{
+    padding: 2%;
+    border:2px solid #121a2b;
+	font-size:larger;
+}
+table>tbody>tr>td{
+    padding: 1%;
+    border: 2px solid  #121a2b;
+    border-bottom: 2px solid  #121a2b
+}
+
+a {
+	 color: black; 
+}
+#img {
+	width:100%;
+}
+
+table {
+    padding-top: 45px;
+    
+    border-collapse: collapse;
+    overflow: hidden;
+    background:  #ffffff;
+}
+

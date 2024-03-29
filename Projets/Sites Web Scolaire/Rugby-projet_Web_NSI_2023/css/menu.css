@@ -1,0 +1,27 @@
+.menu {
+    justify-content: center;
+}
+
+.menu>li {
+    position: relative;
+    background-color: #171e80bb;
+    border-color: #ffffff;
+    border-radius: 1px;
+    border-style: solid;
+    text-align: center;
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 2%;
+
+    text-decoration: none;
+    padding: 2%;
+    border-radius:0%;
+
+}
+
+.menu>li>a {
+    font-size: 20px;
+    background-color: #000000; 
+    text-decoration: none;
+    color: white;
+}
