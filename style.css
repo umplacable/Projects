@@ -29,6 +29,12 @@ a:hover{
     color: #793b12;
 }
 
+.button{
+    padding: 5px;
+    border: 2px solid rgb(243, 47, 106) ;
+    border-radius: 16px;
+}
+
 
 /* CSS du header */
 

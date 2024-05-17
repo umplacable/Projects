@@ -6,6 +6,7 @@
         <title>Cat Couch</title>
         <link rel="icon" href="/image/logo.png">
         <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="./styleSudo.css">
     </head>
     <body>
         <header>
@@ -23,19 +24,458 @@
             </nav>
         </header>
 
-        <div class="main">
-            <H2>ggg</H2>
+        <div class="SudoMain" >
+            <section class="flex">
+                <h1 class="titreP">Sudoku</h1>
+                <a href="Sudoku.zip" class="button"><Strong>Télécharger</Strong></a>
+            </section>
             <section class="arboressance">
-                
-                <a href="../"><h2>../</h2></a>
-                <section class="flex">
-                    <a href="Sudoku.zip"><h2>Sudoku</h2></a>
-                    <p> <big>README à lire </big>(makefile pour linux) </p>
-                    <p> <big>Pour compiler les fichiers :</big> javac ./*.java</p>
-                    <p> <big>Pour créer une grille :</big> java CreerSudoku</p>
-                    <p> <big>Pour résoudre une grille :</big> java ResoudreSudoku</p>
+                <section class="main2" style="background-color: rgb(157, 199, 201);">
+                    <p> <Strong>README à lire </Strong>(makefile pour linux) </p>
+                    <p> <Strong>Pour compiler les fichiers :</Strong> javac ./*.java</p>
+                    <p> <Strong>Pour créer une grille :</Strong> java CreerSudoku</p>
+                    <p> <Strong>Pour résoudre une grille :</Strong> java ResoudreSudoku</p>
+
+                    
                 </section>
-        </section>
+            </section>
+
+            <section class="ContinueMain">
+                <div>
+
+                    <h3>
+                    Sudoku
+                    </h3>
+                    <p>
+                    Ce projet a pour but de proposer une interface conviviale pour concevoir ou résoudre des
+                    grilles de Sudoku. Ce jeu de réflexion demande de remplir une grille en respectant
+                    une configuration de départ différente à chaque partie et quelques règles simples.
+                    </p>
+                    <p>
+                    Vous produirez deux programmes, écrits en Java, sans emprunt extérieur (sauf l'API
+                    officielle), et accompagnés d'un rapport. Le travail sera fait seul ou en binôme
+                    (un binôme est fortement recommandé, afin de vous permettre de vous familiariser avec les
+                    techniques de développement collaboratif), et se terminera impérativement avant le
+                    <strong>dimanche 5 mai 2024 à 18h00</strong>.
+                    </p>
+                    
+                    <h4>
+                    Principes généraux
+                    </h4>
+                    <p>
+                    Une grille de Sudoku est composée de neuf lignes et neufs colonnes. Elle est également
+                    divisée en neuf régions couvrant chacune trois lignes et trois colonnes.
+                    </p>
+                    <p>
+                    Chaque case peut accueillir un chiffre compris entre 1 et 9, mais le même chiffre ne peut
+                    pas apparaître plusieurs fois sur une même ligne, une même colonne, ou une même région.
+                    </p>
+                    <table cellpadding="0" cellspacing="0" style="text-align:center;
+                                                                  font-size:150%;
+                                                                  margin-left:auto;
+                                                                  margin-right:auto;
+                                                                  border:solid black 4px">
+                      <tbody><tr>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    9
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    5
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    4
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    5
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    3
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    4
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    8
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    7
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    2
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    7
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    6
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    3
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    9
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    3
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    4
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    8
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    4
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    1
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    7
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    2
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    5
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    7
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-bottom-width:4px">
+                    6
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    4
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    9
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    2
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    6
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    7
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    9
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    3
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    2
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    1
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    2
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    6
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    5
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px;border-right-width:4px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                        <td style="background-color:white;width:2em;height:2em;border:solid black 2px">
+                    &nbsp;
+                        </td>
+                      </tr>
+                    </tbody></table>
+                    <p>
+                    </p>
+                    <p>
+                    On fournit au joueur une grille où seulement quelques cases sont initialement remplies.
+                    Sa tâche consiste à remplir entièrement la grille en respectant les contraintes
+                    d'unicité. Les grilles de départ sont délicates à construire car elles doivent conduire à
+                    une seule solution. Si cette propriété est respectée, le joueur doit pouvoir remplir la
+                    grille grâce à des déductions logiques et non par essais et erreurs (même si pour
+                    certaines grilles la logique est loin d'être simple).
+                    </p>
+                    <h4>
+                    Fonctionnalités demandées
+                    </h4>
+                    <p>
+                    Le premier programme servira à l'élaboration des grilles de départ. 
+                    </p>
+                    <p>
+                    Pour construire une grille, on pourra partir d'une grille vide ou charger une grille
+                    existante depuis un fichier. Il devient alors possible d'ajouter ou d'enlever des numéros
+                    dans la grille (le programme doit empêcher les placements contradictoires). Une fois la
+                    grille achevée, elle sera sauvegardée dans un nouveau ou un ancien fichier. Le format
+                    employé pour ces fichiers est décrit <a href="#format">plus bas</a>. La sélection
+                    d'un fichier en lecture ou en écriture pourra se faire par le biais de la classe
+                    <a href="/docs/java/api/java.desktop/javax/swing/JFileChooser.html" target="_blank"><tt>JFileChooser</tt></a>.
+                    </p>
+                    <p>
+                    Le second programme servira à résoudre une grille.
+                    </p>
+                    <p>
+                    On commencera par charger une grille depuis un fichier. Puis on choisira si on souhaite
+                    résoudre la grille manuellement ou automatiquement. En mode automatique, le programme
+                    affichera la grille résolue et le temps nécessaire à la résolution (on mesurera naïvement
+                    le temps écoulé à l'aide de la méthode <tt>nanoTime</tt> de la classe
+                    <a href="/docs/java/api/java.base/java/lang/System.html" target="_blank"><tt>System</tt></a>).
+                    </p>
+                    <p>
+                    En mode manuel, le joueur pourra ajouter des chiffres (mais pas si cela contrevient
+                    directement aux contraintes d'unicité) et enlever des chiffres (mais pas s'ils
+                    apparaissent dans la grille de départ). En cas de doute, il pourra aussi faire
+                    temporairement cohabiter jusqu'à quatre chiffres dans une même case (dans ce cas, les
+                    chiffres qui cohabitent sont limités par les autres cases, mais ne les contraignent pas
+                    en retour). Le joueur sera félicité par le programme lorsque toutes les cases
+                    contiendront un chiffre (et un seul).
+                    </p>
+                    <p>
+                    Mettez autant de code que possible en commun entre les deux programmes&nbsp;: de
+                    nombreuses classes devraient être employées par l'un comme par l'autre.
+                    </p>
+                    <h4>
+                    <a name="format"></a> Format de sauvegarde des grilles
+                    </h4>
+                    <p>
+                    Une case sera représentée par le chiffre qu'elle contient si elle est pleine, ou par
+                    <tt>0</tt> si elle est vide. En mettant bout à bout tous les chiffres d'une ligne, on
+                    obtient la représentation décimale d'un entier.
+                    </p>
+                    <p>
+                    Par exemple les lignes de la grille donnée plus haut donnent les entiers suivants&nbsp;:
+                    </p>
+                    <pre style="text-align:right;width:9em;margin-left:10%">95004
+                    530408702
+                    700603
+                    900034080
+                    40010070
+                    20570006
+                    409002000
+                    607903021
+                    200650000
+                    </pre>
+                    <p>
+                    Le fichier contient la représentation canonique Java de ces entiers les uns à la suite
+                    des autres (sans séparateur). Vous pouvez télécharger <a href="https://iut-fbleau.fr/sitebp/pt21/21_2023/exemple.gri">le fichier
+                    correspondant à cet exemple</a> pour tester votre programme.
+                    </p>
+                    
+                    <h4>
+                    Sources
+                    </h4>
+                    <p>
+                    Les sources de votre projet (et <strong>pas</strong> les fichiers <code>.class</code>)
+                    devront être disponibles à tout moment sur le <a target="_blank">serveur Gitea du département</a>. Votre dépôt sera privé, nommé
+                    obligatoirement <code>SAE21_2023</code> et incluera Luc Hernandez (login&nbsp;:
+                    <code>hernand</code>) dans la liste des collaborateurs. Le nombre de soumissions, leur
+                    date et l'équilibre entre leurs auteurs influeront sur la note finale.
+                    </p>
+                    <p>
+                    Pour chaque classe, vous prévoierez un fichier source. Suivez les
+                    <a href="https://iut-fbleau.fr/sitebp/doc_consignes/" target="_blank"> consignes</a> habituelles
+                    scrupuleusement. La définition de chaque classe et de chaque membre de classe sera
+                    précédée d'un commentaire formaté pour permettre la génération de documentation technique
+                    par l'outil <code>javadoc</code> (<a target="_blank">ceci</a> est un exemple de fichier source bien commenté).
+                    </p>
+                    <p>
+                    Un fichier <code>Makefile</code> devra permettre la compilation de votre projet (par la
+                    commande <code>make</code>) ainsi que son exécution (par la commande <code>make
+                    run</code>). Transcrivez bien toutes les dépendances entre vos fichiers dans les règles.
+                    La commande <code>javac</code> fait déjà (très mal) un travail similaire à
+                    <code>make</code>, ce qui peut créer des interférences. Pour éviter cela, pensez à lui
+                    passer l'option <code>-implicit:none</code>. <a target="_blank">Ceci</a> est un exemple très basique.
+                    </p>
+                    
+                    <h4>
+                    <a name="rapport"></a> Rapport
+                    </h4>
+                    <p>
+                    Le rapport d'avancement prendra la forme d'un fichier <tt>PDF</tt> disponible avec les
+                    sources dans votre dépôt Gitea. Vous y inclurez en particulier&nbsp;:
+                    </p>
+                    <ul>
+                      <li>
+                    une introduction contenant une brève description du sujet,
+                      </li>
+                      <li>
+                    la description des fonctionnalités de votre programme, aidée de captures d'écran,
+                      </li><li>
+                    une présentation de la structure de chaque programme, avec deux diagrammes de classes à
+                    l'appui,
+                      </li>
+                      <li>
+                    une explication de l'algorithme qui résoud les grilles,
+                      </li>
+                      <li>
+                    une conclusion personnelle pour chaque auteur.
+                      </li>
+                    </ul>
+                    <p>
+                    Soignez la présentation&nbsp;! L'orthographe, la grammaire, les pages de garde, la table des
+                    matières, les en-tête et pieds de page ne sont pas en option...
+                    </p>
+                    <p>
+                    Notez bien que le rapport ne doit pas contenir d'extrait du code source du projet, étant
+                    donné que le correcteur peut aller le consulter directement s'il en éprouve le besoin.
+                    N'hésitez pas en revanche à illustrer vos propos par des schémas. Ceux-ci peuvent être
+                    construits directement dans le logiciel de traitement de texte s'il le permet, ou dans un
+                    logiciel dédié, tel que <a href="https://inkscape.org/fr/">Inkscape</a> ou 
+                    <a href="https://fr.libreoffice.org/discover/draw/">Draw</a> (tous deux gratuits).
+                    </p>
+                </div>
+            </section>
         </div>
     </body>
 </html>

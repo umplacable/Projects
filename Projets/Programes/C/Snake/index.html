@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cat Couch</title>
+        <link rel="icon" href="/image/logo.png">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="./styleSnake.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="Logo" href="/umplacable.github.io/index.html">
+                    <img src="/umplacable.github.io/image/logo.png" alt="logo" class="WebLogo" width="30%">
+                    <h2 class="Tlogo">Cat Couch</h2>
+                </a>
+                <ul>
+                    <li><a href="/umplacable.github.io/Projets">Projets</a></li>
+                    <li><a href="">Musiques</a></li>
+                    <li><a href="">SFX</a></li>
+                    <li><a href="/umplacable.github.io/Projets/">Arboressence</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="SnakeMain" >
+            <section class="flex">
+                <h1 class="titreP">Snake</h1>
+                <a href="Snake-SAE11_2023.zip" class="button"><Strong>Télécharger</Strong></a>
+            </section>
+            <section class="arboressance">
+                <section class="main2" style="background-color: rgb(157, 199, 201);">
+                    <p> <Strong>README à lire </Strong>(makefile pour linux) </p>
+                    <p> <Strong>Pour compiler les fichiers :</Strong> javac ./*.java</p>
+                    <p> <Strong>Pour créer une grille :</Strong> java CreerSudoku</p>
+                    <p> <Strong>Pour résoudre une grille :</Strong> java ResoudreSudoku</p>
+                </section>
+            </section>
+
+            <section class="ContinueMain">
+                <div>
+
+                    <h3>
+                    Le jeu du serpent
+                    </h3>
+                    <p>
+                    Dans ce projet vous aurez à réaliser une version du
+                    <a href="https://fr.wikipedia.org/wiki/Snake_(jeu_vid%C3%A9o)" target="_blank">Snake</a>.
+                    Le joueur y contrôle un serpent toujours en mouvement qui doit manger des pastilles sans
+                    percuter les limites du terrain ou sa propre queue.
+                    </p>
+                    <p style="text-align:center;margin-top:2em;margin-bottom:2em">
+                    <img src="https://iut-fbleau.fr/sitebp/pt11/11_2023/serpent.jpg" alt="capture d'écran d'un jeu du serpent">
+                    </p>
+                    <p>
+                    Vous produirez un programme écrit en C89, sans emprunt extérieur (sauf
+                    <a href="https://iut-fbleau.fr/sitebp/doc/doc_bib_graphique/" target="_blank">la bibliothèque graphique de
+                    l'IUT</a>), et accompagné d'un rapport. Le travail sera fait seul ou en binôme, et devra
+                    être terminé avant le <strong>dimanche 24 décembre 2023 à 23h59</strong>.
+                    </p>
+                    <p>
+                    La partie logicielle sera développée dès le départ dans un dépôt dédié du
+                    <a target="_blank">serveur Gitea du
+                    département</a>. Le rapport prendra la forme d'un fichier au format <tt>PDF</tt> joint
+                    aux sources.
+                    </p>
+                    
+                    <h4>
+                    Règles du jeu
+                    </h4>
+                    <p>
+                    Le terrain de jeu prend la forme d'une grille de 40 lignes par 60 colonnes. 5 pastilles
+                    de la taille d'une case y sont placées aléatoirement. Un serpent formé de 10 segments
+                    (également de la taille d'une case) est placé au milieu.
+                    </p>
+                    <p>
+                    Le serpent avance sans cesse : pour cela on ajoute un segment en tête et on enlève un
+                    segment en queue. Si la case où on doit ajouter un segment est en dehors du terrain ou
+                    déjà occupée par un segment, la partie est terminée. Si on ajoute un segment par dessus
+                    une pastille, elle est «mangée». Une nouvelle pastille est placée sur une
+                    autre case libre choisie aléatoirement, et le serpent s'allonge de 2 segments.
+                    </p>
+                    <p>
+                    Le joueur peut changer la direction du serpent à l'aide des touches directionnelles
+                    <code>←</code> <code>↑</code> <code>→</code> <code>↓</code>. Il peut quitter la partie
+                    avec la touche <code>Esc</code>, et mettre le jeu en pause avec la touche
+                    <code>Espace</code> (il met fin à la pause en rappuyant sur <code>Espace</code>).
+                    </p>
+                    <p>
+                    En dehors du terrain de jeu, le joueur peut voir le temps écoulé et le score actuel. Le
+                    score sera égal à 5 fois le nombre de pastilles consommées. Ces informations devront être
+                    encore visibles après la fin de la partie afin que le joueur puisse juger sa performance.
+                    </p>
+                    
+                    <h4>
+                    Variantes
+                    </h4>
+                    <p>
+                    Choisissez au moins une règle supplémentaire à intégrer dans votre projet&nbsp;:
+                    </p>
+                    <ul>
+                      <li>
+                    Le terrain de jeu comporte des obstacles (fixes ou mobiles) que le serpent doit éviter.
+                      </li>
+                      <li>
+                    Le déplacement du serpent s'accélère en fonction du score ou du temps écoulé.
+                      </li>
+                      <li>
+                    Les serpents préfèrent leurs proies vivantes&nbsp;: les pastilles peuvent se déplacer de
+                    temps en temps.
+                      </li>
+                      <li>
+                    Plusieurs variétés de pastilles sont possibles et chacune a un effet différent.
+                      </li>
+                    </ul>
+                    <p>
+                    Vous pouvez introduire une variante de votre invention pourvu qu'elle représente un
+                    travail équivalent. Dans tous les cas, le jeu ne doit pas devenir frustrant ou
+                    insurmontable.
+                    </p>
+                    
+                    
+                    <h4>
+                    Sources
+                    </h4>
+                    <p>
+                    Les sources de votre projet (et <strong>pas</strong> les fichiers générés <code>.o</code>
+                    ou <code>.out</code>) devront être disponibles dès le début du développement sur le
+                    <a target="_blank">serveur Gitea du
+                    département</a>. Votre dépôt sera privé, nommé obligatoirement <code>SAE11_2023</code>
+                    et incluera Luc Hernandez (login&nbsp;: <code>hernand</code>) dans la liste des
+                    collaborateurs. Votre utilisation de ce service sera contrôlée et comptée dans la note.
+                    </p>
+                    <p>
+                    Votre code devra être raisonnablement divisé en fonctions et en fichiers. Commentez
+                    chaque fonction pour en décrire l'usage. Suivez les <a href="https://iut-fbleau.fr/sitebp/doc_consignes/">
+                    consignes</a> habituelles scrupuleusement.
+                    </p>
+                    <p>
+                    Un fichier <code>Makefile</code> devra permettre la compilation de votre projet (par la
+                    commande <code>make</code>) ainsi que son exécution (par la commande <code>make
+                    run</code>). Transcrivez bien toutes les dépendances entre vos fichiers dans les règles.
+                    </p>
+                    
+                    <h4>
+                    Rapport
+                    </h4>
+                    <p>
+                    Le rapport d'avancement prendra la forme d'un fichier <tt>PDF</tt> disponible avec les
+                    sources sur le serveur Gitea. Vous y inclurez en particulier&nbsp;:
+                    </p>
+                    <ul>
+                      <li>
+                    une introduction contenant une brève description du sujet (avec vos propres mots).
+                      </li>
+                      <li>
+                    la description des fonctionnalités de votre programme, aidée de captures d'écran,
+                      </li>
+                      <li>
+                    une justification du découpage en différents fichiers source, avec diagramme à l'appui,
+                      </li>
+                      <li>
+                    une explication des données qui représentent le serpent dans votre programme, et des
+                    transformations que celles-ci peuvent subir au cours de la partie,
+                      </li>
+                      <li>
+                    une conclusion personnelle pour chaque auteur (évitez les platitudes).
+                      </li>
+                    </ul>
+                    <p>
+                    Soignez la présentation&nbsp;! L'orthographe, la grammaire, les pages de garde, la table des
+                    matières, les en-tête et pieds de page ne sont pas en option...
+                    </p>
+                    <p>
+                    Notez bien que le rapport ne doit pas contenir d'extrait du code source du projet, étant
+                    donné que le correcteur peut aller le consulter directement s'il en éprouve le besoin.
+                    N'hésitez pas en revanche à illustrer vos propos par des schémas. Ceux-ci peuvent être
+                    construits directement dans le logiciel de traitement de texte s'il le permet, ou dans un
+                    logiciel dédié, tel que <a href="https://inkscape.org/fr/">Inkscape</a> ou 
+                    <a href="https://fr.libreoffice.org/discover/draw/">Draw</a> (tous deux gratuits).
+                    </p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

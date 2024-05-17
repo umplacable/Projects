@@ -1,0 +1,19 @@
+.SudoMain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 25px 8%;
+    height: auto;
+    margin-top: 8.7%;
+
+    background-color: rgba(186, 230, 233,0.9);
+    
+    padding: 20px 20px 20px 20px;
+}
+
+.ContinueMain{
+    height: 100%;
+}
